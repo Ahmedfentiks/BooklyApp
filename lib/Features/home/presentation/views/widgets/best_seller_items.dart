@@ -1,6 +1,7 @@
 import 'package:course_project/Core/utils/assets.dart';
+import 'package:course_project/Core/utils/styles.dart';
+import 'package:course_project/Features/home/presentation/views/widgets/book_rating.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class BestSellerItems extends StatelessWidget {
   const BestSellerItems({super.key});
@@ -25,9 +26,30 @@ class BestSellerItems extends StatelessWidget {
             ),
           ),
         ),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [Text("jdfklf")],
+        const SizedBox(width: 24),
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(
+                width: MediaQuery.of(context).size.width * 0.5,
+                child: Text(
+                  "Jungle Book",
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: Styles.textStyle20fontfamily,
+                ),
+              ),
+              const Text("Rudyard Kipling", style: Styles.textStyle14),
+              Row(
+                children: [
+                  Text("19.99£", style: Styles.textStyle20),
+                  const Spacer(),
+                  const BookRating(),
+                ],
+              ),
+            ],
+          ),
         ),
       ],
     );
