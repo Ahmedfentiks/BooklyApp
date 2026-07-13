@@ -2,6 +2,7 @@ import 'package:course_project/Core/utils/assets.dart';
 import 'package:course_project/Core/utils/styles.dart';
 import 'package:course_project/Features/home/presentation/views/book_details_view.dart';
 import 'package:course_project/Features/home/presentation/views/widgets/book_rating.dart';
+import 'package:course_project/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 
@@ -13,8 +14,8 @@ class BestSellerItems extends StatelessWidget {
     return GestureDetector(
       onTap: () => Get.to(
         BookDetailsView(),
-        transition: Transition.fadeIn,
-        duration: Duration(milliseconds: 250),
+        transition: kTransition,
+        duration: kDuration,
       ),
       child: Row(
         children: [

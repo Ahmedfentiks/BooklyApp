@@ -1,6 +1,7 @@
 import 'package:course_project/Core/utils/assets.dart';
 import 'package:course_project/Features/home/presentation/views/home_view.dart';
 import 'package:course_project/Features/splash/presentation/views/widgets/text_slide_transition.dart';
+import 'package:course_project/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:get/state_manager.dart';
@@ -62,8 +63,8 @@ class _SplashViewBodyState extends State<SplashViewBody>
       Duration(seconds: 2),
       () => Get.to(
         HomeView(),
-        transition: Transition.fadeIn,
-        duration: Duration(milliseconds: 300),
+        transition: kTransition,
+        duration: kDuration,
       ),
     );
   }

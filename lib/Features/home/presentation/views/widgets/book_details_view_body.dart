@@ -16,8 +16,8 @@ class BookDetailsViewBody extends StatelessWidget {
             child: Column(
               children: [
                 const BookDetailsViewAppBar(),
-                BookDetailsContant(),
-                SuggestedBooksSection(),
+                const BookDetailsContant(),
+                const SuggestedBooksSection(),
               ],
             ),
           ),
