@@ -11,13 +11,11 @@ class BestSellerItems extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        Get.to(
-          BookDetailsView(),
-          transition: Transition.fadeIn,
-          duration: Duration(milliseconds: 250),
-        );
-      },
+      onTap: () => Get.to(
+        BookDetailsView(),
+        transition: Transition.fadeIn,
+        duration: Duration(milliseconds: 250),
+      ),
       child: Row(
         children: [
           SizedBox(
