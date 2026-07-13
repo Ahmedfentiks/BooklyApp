@@ -6,16 +6,22 @@ class HomeViewAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AppBar(
-      automaticallyImplyLeading: false,
-      actions: [
-        SizedBox(width: 115, height: 115, child: Image.asset(AssetsData.logo)),
-        Spacer(flex: 1),
-        IconButton(
-          onPressed: () {},
-          icon: const Icon(Icons.search_outlined, size: 40),
-        ),
-      ],
+    return SafeArea(
+      child: AppBar(
+        automaticallyImplyLeading: false,
+        actions: [
+          SizedBox(
+            width: 115,
+            height: 115,
+            child: Image.asset(AssetsData.logo),
+          ),
+          Spacer(flex: 1),
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.search_outlined, size: 40),
+          ),
+        ],
+      ),
     );
   }
 }

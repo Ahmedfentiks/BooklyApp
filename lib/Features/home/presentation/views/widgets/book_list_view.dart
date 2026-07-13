@@ -1,4 +1,4 @@
-import 'package:course_project/Features/home/presentation/views/widgets/books_list_view_items.dart';
+import 'package:course_project/Features/home/presentation/views/widgets/book_items.dart';
 import 'package:flutter/material.dart';
 
 class BookListView extends StatelessWidget {
@@ -12,7 +12,7 @@ class BookListView extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemCount: 10,
         itemBuilder: (context, index) {
-          return BooksListViewItems();
+          return BookItems();
         },
       ),
     );
